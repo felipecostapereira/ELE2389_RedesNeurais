@@ -1,0 +1,50 @@
+\begin{thebibliography}{}
+
+\bibitem[Figueiredo et~al., 2011]{autoreg}
+Figueiredo, E., Figueiras, J., Park, G., Farrar, C.~R., and Worden, K. (2011).
+\newblock Influence of the autoregressive model order on damage detection.
+\newblock {\em Computer-Aided Civil and Infrastructure Engineering},
+  26(3):225--238.
+
+\bibitem[Figueiredo et~al., 2009]{report_dataset}
+Figueiredo, E., Park, G., Figueiras, J., Farrar, C., and Worden, K. (2009).
+\newblock Structural health monitoring algorithm comparisons using standard
+  data sets.
+
+\bibitem[Geron, 2017]{geron2017hands-on}
+Geron, A. (2017).
+\newblock {\em Hands-on machine learning with Scikit-Learn and TensorFlow :
+  concepts, tools, and techniques to build intelligent systems}.
+\newblock O'Reilly Media, Sebastopol, CA.
+
+\bibitem[Haykin, 1999]{haykin2}
+Haykin, S. (1999).
+\newblock {\em Neural Networks and Learning Machines}.
+\newblock Prentice Hall.
+
+\bibitem[Hetch-Nielsen, 1992]{HECHTNIELSEN199265}
+Hetch-Nielsen, R. (1992).
+\newblock {\em III.3 - Theory of the Backpropagation Neural Network**Based on
+  “nonindent” by Robert Hecht-Nielsen, which appeared in Proceedings of the
+  International Joint Conference on Neural Networks 1, 593–611, June 1989. ©
+  1989 IEEE.}
+\newblock Academic Press.
+
+\bibitem[Jolliffe, 2011]{pca}
+Jolliffe, I. (2011).
+\newblock {\em Principal Component Analysis}, pages 1094--1096.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[Kohonen, 2001]{kohonen}
+Kohonen, T. (2001).
+\newblock {\em Self-organizing maps}.
+\newblock Springer series in information sciences, 30. Springer, Berlin, 3rd
+  edition.
+
+\bibitem[Worden et~al., 2007]{axioms}
+Worden, K., Farrar, C., and Manson, G. (2007).
+\newblock The fundamental axioms of structural health monitoring.
+\newblock {\em Proceedings of The Royal Society A: Mathematical, Physical and
+  Engineering Sciences}, 463:1639--1664.
+
+\end{thebibliography}
