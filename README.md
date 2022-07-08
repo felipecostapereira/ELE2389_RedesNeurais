@@ -13,6 +13,7 @@ Documentação do trabalho final: Apresentação da proposta, Apresentação do trabal
 
 ###  Pasta datasets:
 Datasets para todas as práticas.
+
 Para o trabalho final 'data3SS2009.mat' não consegui fazer o upload para o github devido ao tamanho do arquivo, conforme erro abaixo:
 ```
 remote: error: See http://git.io/iEPt8g for more information.
