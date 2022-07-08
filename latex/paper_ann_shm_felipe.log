@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.24)  6 JUL 2022 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.24)  8 JUL 2022 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -622,7 +622,7 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 249--250
  [][] 
  []
 
-<figures//exploratory_01.png, id=131, 804.00375pt x 570.13pt>
+<figures//exploratory_01.png, id=132, 804.00375pt x 570.13pt>
 File: figures//exploratory_01.png Graphic file (type png)
 <use figures//exploratory_01.png>
 Package pdftex.def Info: figures//exploratory_01.png  used on input line 267.
@@ -632,80 +632,105 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 267--268
  [][] 
  []
 
-<figures//pairplot_bin.png, id=132, 634.37pt x 287.0725pt>
+<figures//pairplot_bin.png, id=135, 634.37pt x 287.0725pt>
 File: figures//pairplot_bin.png Graphic file (type png)
 <use figures//pairplot_bin.png>
 Package pdftex.def Info: figures//pairplot_bin.png  used on input line 277.
 (pdftex.def)             Requested size: 204.85672pt x 92.70172pt.
-<figures//pairplot_04.png, id=133, 648.4225pt x 287.0725pt>
+<figures//pairplot_04.png, id=136, 648.4225pt x 287.0725pt>
 File: figures//pairplot_04.png Graphic file (type png)
 <use figures//pairplot_04.png>
 Package pdftex.def Info: figures//pairplot_04.png  used on input line 283.
 (pdftex.def)             Requested size: 204.85672pt x 90.69551pt.
-<figures//pairplot_17.png, id=134, 624.3325pt x 288.07625pt>
+<figures//pairplot_17.png, id=137, 624.3325pt x 288.07625pt>
 File: figures//pairplot_17.png Graphic file (type png)
 <use figures//pairplot_17.png>
 Package pdftex.def Info: figures//pairplot_17.png  used on input line 289.
 (pdftex.def)             Requested size: 204.85672pt x 94.52039pt.
 [4 <./figures//pca_0.png> <./figures//exploratory_01.png> <./figures//pairplot_bin.png> <./figures//pairplot_04.png> <./figures//pairplot_17.png>]
-<figures//ann_protocol.png, id=152, 505.13719pt x 414.79968pt>
+<figures//ann_protocol.png, id=155, 505.13719pt x 414.79968pt>
 File: figures//ann_protocol.png Graphic file (type png)
 <use figures//ann_protocol.png>
-Package pdftex.def Info: figures//ann_protocol.png  used on input line 327.
+Package pdftex.def Info: figures//ann_protocol.png  used on input line 329.
 (pdftex.def)             Requested size: 256.07481pt x 210.27917pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 327--328
+Overfull \hbox (5.0pt too wide) in paragraph at lines 329--330
  [][] 
  []
 
-<figures//confusion_matrix.png, id=155, 1185.42876pt x 576.1525pt>
+<figures//confusion_matrix.png, id=159, 1185.42876pt x 576.1525pt>
 File: figures//confusion_matrix.png Graphic file (type png)
 <use figures//confusion_matrix.png>
-Package pdftex.def Info: figures//confusion_matrix.png  used on input line 339.
+Package pdftex.def Info: figures//confusion_matrix.png  used on input line 341.
 (pdftex.def)             Requested size: 460.93153pt x 224.02162pt.
 [5 <./figures//ann_protocol.png>]
-<figures//soft_model_protocol.png, id=166, 505.13719pt x 435.87843pt>
+<figures//soft_model_protocol.png, id=173, 505.13719pt x 435.87843pt>
 File: figures//soft_model_protocol.png Graphic file (type png)
 <use figures//soft_model_protocol.png>
-Package pdftex.def Info: figures//soft_model_protocol.png  used on input line 413.
+Package pdftex.def Info: figures//soft_model_protocol.png  used on input line 415.
 (pdftex.def)             Requested size: 256.07481pt x 220.96486pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 413--414
+Overfull \hbox (5.0pt too wide) in paragraph at lines 415--416
  [][] 
  []
 
-<figures//results.png, id=168, 779.91376pt x 553.06625pt>
+<figures//results.png, id=176, 779.91376pt x 553.06625pt>
 File: figures//results.png Graphic file (type png)
 <use figures//results.png>
-Package pdftex.def Info: figures//results.png  used on input line 439.
+Package pdftex.def Info: figures//results.png  used on input line 441.
 (pdftex.def)             Requested size: 256.07481pt x 181.59256pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 439--440
+Overfull \hbox (5.0pt too wide) in paragraph at lines 441--442
  [][] 
  []
 
 [6 <./figures//confusion_matrix.png> <./figures//soft_model_protocol.png>]
-<figures//som_unsup.png, id=179, 487.8225pt x 577.15625pt>
+<figures//som_unsup.png, id=198, 487.8225pt x 577.15625pt>
 File: figures//som_unsup.png Graphic file (type png)
 <use figures//som_unsup.png>
-Package pdftex.def Info: figures//som_unsup.png  used on input line 467.
-(pdftex.def)             Requested size: 230.46576pt x 272.67253pt.
-<figures//som_2.png, id=180, 487.8225pt x 577.15625pt>
+Package pdftex.def Info: figures//som_unsup.png  used on input line 469.
+(pdftex.def)             Requested size: 125.47415pt x 148.44545pt.
+<figures//som_2.png, id=199, 487.8225pt x 577.15625pt>
 File: figures//som_2.png Graphic file (type png)
 <use figures//som_2.png>
-Package pdftex.def Info: figures//som_2.png  used on input line 473.
-(pdftex.def)             Requested size: 230.46576pt x 272.67253pt.
-<figures//som_4.png, id=181, 487.8225pt x 577.15625pt>
+Package pdftex.def Info: figures//som_2.png  used on input line 475.
+(pdftex.def)             Requested size: 125.47415pt x 148.44545pt.
+<figures//som_4.png, id=200, 487.8225pt x 577.15625pt>
 File: figures//som_4.png Graphic file (type png)
 <use figures//som_4.png>
-Package pdftex.def Info: figures//som_4.png  used on input line 479.
-(pdftex.def)             Requested size: 230.46576pt x 272.67253pt.
-<figures//som_17.png, id=182, 487.8225pt x 577.15625pt>
+Package pdftex.def Info: figures//som_4.png  used on input line 481.
+(pdftex.def)             Requested size: 125.47415pt x 148.44545pt.
+<figures//som_17.png, id=201, 487.8225pt x 577.15625pt>
 File: figures//som_17.png Graphic file (type png)
 <use figures//som_17.png>
-Package pdftex.def Info: figures//som_17.png  used on input line 485.
-(pdftex.def)             Requested size: 230.46576pt x 272.67253pt.
- (paper_ann_shm_felipe.bbl
+Package pdftex.def Info: figures//som_17.png  used on input line 487.
+(pdftex.def)             Requested size: 125.47415pt x 148.44545pt.
+<figures//som_unsup_2525.png, id=202, 359.54324pt x 416.15475pt>
+File: figures//som_unsup_2525.png Graphic file (type png)
+<use figures//som_unsup_2525.png>
+Package pdftex.def Info: figures//som_unsup_2525.png  used on input line 499.
+(pdftex.def)             Requested size: 125.47415pt x 145.2309pt.
+<figures//som_2_2525.png, id=203, 358.33875pt x 414.95026pt>
+File: figures//som_2_2525.png Graphic file (type png)
+<use figures//som_2_2525.png>
+Package pdftex.def Info: figures//som_2_2525.png  used on input line 505.
+(pdftex.def)             Requested size: 125.47415pt x 145.29175pt.
+<figures//som_4_2525.png, id=204, 361.95226pt x 416.757pt>
+File: figures//som_4_2525.png Graphic file (type png)
+<use figures//som_4_2525.png>
+Package pdftex.def Info: figures//som_4_2525.png  used on input line 511.
+(pdftex.def)             Requested size: 125.47415pt x 144.47447pt.
+<figures//som_17_2525.png, id=205, 360.74776pt x 419.76825pt>
+File: figures//som_17_2525.png Graphic file (type png)
+<use figures//som_17_2525.png>
+Package pdftex.def Info: figures//som_17_2525.png  used on input line 517.
+(pdftex.def)             Requested size: 125.47415pt x 145.99873pt.
+
+Underfull \hbox (badness 1668) in paragraph at lines 544--545
+\OT1/cmr/m/n/10 form-ing a 120-dimension in-put space into a 6-
+ []
+
+[7 <./figures//results.png>] [8 <./figures//som_unsup.png> <./figures//som_2.png> <./figures//som_4.png> <./figures//som_17.png> <./figures//som_unsup_2525.png> <./figures//som_2_2525.png> <./figures//som_4_2525.png> <./figures//som_17_2525.png>] (paper_ann_shm_felipe.bbl
 Underfull \hbox (badness 2503) in paragraph at lines 4--8
 []\OT1/cmr/m/n/10 Figueiredo, E., Figueiras, J.,
  []
@@ -715,24 +740,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
 []\OT1/cmr/m/n/10 Figueiredo, E., Park, G.,
  []
 
-[7 <./figures//results.png>] [8 <./figures//som_unsup.png> <./figures//som_2.png> <./figures//som_4.png> <./figures//som_17.png>]) [9
+) [9
 
 ] (paper_ann_shm_felipe.aux)
 Package rerunfilecheck Info: File `paper_ann_shm_felipe.out' has not changed.
 (rerunfilecheck)             Checksum: 55825D89BFDDAA51028CD48F1390CB5C;1741.
  ) 
 Here is how much of TeX's memory you used:
- 13024 strings out of 478354
- 215605 string characters out of 2837590
- 550899 words of memory out of 3000000
- 31189 multiletter control sequences out of 15000+600000
+ 13070 strings out of 478354
+ 216710 string characters out of 2837590
+ 551357 words of memory out of 3000000
+ 31230 multiletter control sequences out of 15000+600000
  475791 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,77p,1042b,567s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 72i,12n,77p,1042b,555s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\bewm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1000.pk><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/bewm/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on paper_ann_shm_felipe.pdf (9 pages, 1334743 bytes).
+Output written on paper_ann_shm_felipe.pdf (9 pages, 1529581 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -35,7 +35,7 @@
 \graphicspath{{figures/}} %Setting the graphicspath
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
-\title{Neural Networks applied to Structure Health Monitoring using autoregressive models as feature extractors}
+\title{Neural Networks applied to Structure Health Monitoring using Autoregressive Models as feature extractors}
 \author{Felipe da Costa Pereira - (felipecostapereira@gmail.com)}
 \affil{PUC-RJ - ELE2389 - Redes Neurais - Trabalho Final}
 \affil{Professora: Marley Vellasco}
@@ -51,7 +51,7 @@
 
 \begin{abstract}
 
-In Structure Health Monitoring, an important task is to detect damage patterns in a given physical system. Machine Learning techniques have been successfully applied in this area for this purpose. A critical step in a machine learning project is the feature extraction, as measured data acquired in these systems usually consist of important amount of timeseries information. This paper proposes a complete data processing pipeline, from feature extraction based on autoregressive models to state condition damage detection classification, using neural networks and comparing its preformance with other popular classification algorithms and based on a laboratory data acquisition assembly. This work also analyses a neural network based Kohonen Map as an unsupervised method to understand the feature space for the problem of damage detection in SHM.
+In Structure Health Monitoring (SHM), an important task is to detect damage patterns in a given physical system. Machine Learning techniques have been successfully applied in this area for this purpose. A critical step in a machine learning project in SHM is the feature extraction, as measured data acquired in these systems usually consist of important amount of timeseries information. This paper proposes a complete data processing pipeline, from feature extraction based on autoregressive models to state condition damage detection classification, using neural networks and comparing its preformance with other popular classification algorithms and based on a laboratory data acquisition assembly. This work also analyses a self-organizing map as an unsupervised method to understand the feature space for the problem of damage detection in SHM.
 
 
 
@@ -70,7 +70,7 @@ Structure Health Monitoring (SHM) consists of observing measured data from a giv
 
 The measured data in this field consists of sensors response over time. The main approach to detect damage is try to select features from these data that are sensitive to damage but insensitive to operational and environmental variations (\cite{autoreg}). In \cite{report_dataset}, a complete discussion on several techniques for feature extraction can be found and the paradigms of feature extraction for strucutre health monitoring are widely discussed in \cite{axioms}.
 
-Autoregressive models are a class of models which can be succesfully applied for feature extraction. The work \cite{autoreg} analyses in detail the autoregressive (AR) timeseries models as feature extractor tools in order to detect damage patterns on a laboratory experiment. Such study also shows the importance of the model order as a key parameter to represent the patterns. According to the autors, the AR model coefficients are, themselves, sensitive features to the damage, since the appropriate model order is respected.
+Autoregressive models are a class of models which can be succesfully applied for feature extraction. The work \cite{autoreg} analyses in detail the autoregressive (AR) timeseries models as feature extractor tools in order to detect damage patterns on a laboratory experiment. Such study also shows the importance of the model order as a key parameter to represent the patterns. According to the authors, the AR model coefficients are, themselves, sensitive features to the damage, once the appropriate model order is respected.
 
 The approach of this case study is to use neural networks to identify damage in a controlled experiment, using the autoregressive (AR) models as feature exractors as disucssed in \cite{autoreg}, and its coefficients as features. Then, we compare the results with other popular algorithms for classification.
 
@@ -203,9 +203,9 @@ response time-series data $x_1, x_2, \cdots, x_n$ and it can be written as
 
 \[x_i = \sum_{j=1}^{p} \phi_j x_{i-j} + \epsilon_i\]
 
-where $xi$ is the measured signal at the time instant $ti$. The parameters $\phi_j$ are fitted so that the residual in predicting the value of the timeseries $x_i$ , using the previous values $x_{i-j}$, is minimized. This estimation of the unknown AR parameters, $\phi_j$, can be done by using least-squares approach and the $\phi_j$ parameters can be used directly as damage-sensitive features. The appropriate AR model order is initially unknown. A higher order model may better fit the data, but may not generalize well to other data sets. On the other hand, a low-order model will not necessarily capture the underlying physical system dynamics \cite{autoreg}.
+where $x_i$ is the measured signal at the time instant $t_i$. The parameters $\phi_j$ are fitted so that the residual in predicting the value of the timeseries $x_i$ , using the previous values $x_{i-j}$, is minimized. This estimation of the unknown AR parameters, $\phi_j$, can be done by using least-squares approach and the $\phi_j$ parameters can be used directly as damage-sensitive features. The appropriate AR model order is initially unknown. A higher order model may better fit the data, but may not generalize well to other data sets. On the other hand, a low-order model will not necessarily capture the underlying physical system dynamics \cite{autoreg}.
 
-In this study we will use $p = 30$ as proposed by \cite{autoreg} as being a good model order to work as a feature extractor for the database used. By fitting the AR(p=30) model for each one of the four channels we have 30 coefficients per channel. We apply the AR(30) model to each of the four channels timeseries of all the 850 cases in the dataset. Each channel 8192 datapoints are then transformed into the domain of the 30 AR coefficients. The mean value of the AR model parameters, computed in the 850 dataset observations is shown in figure \ref{fig:ar0}, for the four accelerometers measures.
+In this study we will use $p=30$ as proposed by \cite{autoreg} as being a good model order to work as a feature extractor for the database used. By fitting the AR(p=30) model for each one of the four channels we have 30 coefficients per channel. We apply the AR(30) model to each of the four channels timeseries of all the 850 cases in the dataset. Each channel 8192 datapoints are then transformed into the domain of the 30 AR coefficients. The mean value of the AR model parameters, computed in the 850 dataset observations is shown in figure \ref{fig:ar0}, for the four accelerometers measures.
 
 \begin{figure}[H]
       \centering
@@ -260,7 +260,7 @@ In this study we apply a PCA transformation on the features provided by the AR M
 %
 \section{Exploratory Analysis}
 
-After transforming the data with the Principal Component technique, the feature space drops to six representative features. As shown in \ref*{fig:exploratory_01}, the first PCA component carries information to distinguish some of the 17 state conditions. PCA components 2 and 3 also carry information to detect some labels but have more similar values between the classes. For the fourth PCA component, the 17 classes have similar values.
+After transforming the data with the Principal Component technique, the feature space drops to six representative features. As shown in figure \ref{fig:exploratory_01}, the first PCA component carries information to distinguish some of the 17 state conditions. PCA components 2 and 3 also carry information to detect some labels but have more similar values between the classes. For the fourth PCA component, the 17 classes have similar distributions.
 
 \begin{figure}[H]
       \centering
@@ -269,7 +269,7 @@ After transforming the data with the Principal Component technique, the feature 
       \label{fig:exploratory_01}
 \end{figure}
 
-The cross plots in figure \ref*{fig:pairplots} show a relationship between components 1 and the other to most imporatant (2 and three). In the binary class problem (figure \ref*{fig:pairplot_bin}), the classes seem to be linearly separable. On the other hand, for the 4 group and 17 state conditions classification, the classes are mixed in the space of features given by PCA components.
+The cross plots in figure \ref{fig:pairplots} show a relationship between components 1 and the other two most imporatant (components 2 and 3). In the binary class problem (figure \ref{fig:pairplot_bin}), the classes seem to be linearly separable. On the other hand, for the 4 group and 17 state conditions classification, the classes are mixed in the space of features given by PCA components.
 
 \begin{figure}[H]
       \centering
@@ -317,10 +317,12 @@ In this study, we'll train a Multi Layer Perceptron (MLP) neural network to pred
 
 \[N_{hidden} <= 2N_{input} + 1\]
 
+where $N_{hidden}$ is the number of hidden neurons and $N_{input}$ is the number of inputs, in our case, 6.
+
 Other parameters were tested: number of hidden layers (one or two), learning rate, number of epochs, type of acivation function for the hidden processors. The neural network clasifier architecture (one relu activation hidden layer with 13 processors) was chosen over a 5-fold cross-validation as the model having the best score over the five folds.
 
 
-As a second step, we used the selected model to measure its behaviour on different holdout sets by training that model once again for each of the ten train/validation/test splits as described in figure \ref{fig:ann_protocol}. The objective of this step is to provide a statistical assessment of the results by eliminating possible biases if a single holdout was used.
+As a second step, we used the selected model to measure its behaviour on different holdout sets by training that model once again for each of the ten train/validation/test splits, as described in figure \ref{fig:ann_protocol}. The objective of this step is to provide a statistical assessment of the results by eliminating possible biases if a single holdout was used.
 
 \begin{figure}[H]
       \centering
@@ -330,14 +332,14 @@ As a second step, we used the selected model to measure its behaviour on differe
 \end{figure}
 
 
-The selected architecture was: 6 input (PCA components), 13 hidden neurons in 1 hidden layer, softmax activation function for the output and relu for the hidden layer. Concerning the output, this architecture was tested in two situations: predicting the 17 damage states and predicting the 4 group (\ref{table:GroupTable}). The procedure described in \ref*{fig:ann_protocol} was executed then, twice, with 17 and 4 outputs, respectivelly.
+The selected architecture was: 6 input (PCA components), 13 hidden neurons in 1 hidden layer, softmax activation function for the output and relu for the hidden layer. Concerning the output, this architecture was tested in two situations: predicting the 17 damage states and predicting the 4 group (\ref{table:GroupTable}). The procedure described in \ref{fig:ann_protocol} was executed then, twice, with 17 and 4 outputs, respectivelly.
 
-The confusion matrices (normalized by the true label), for these two problems, is shown in \ref{fig:confusion_matrix}, for the best realization model over the 10 different splits. Although the model had a higher accuracy on predicting the four grouped stage conditions compared to the 17 classes, the results were quite similar in terms of accuracy.
+The confusion matrices (normalized by the true label), for these two problems, is shown in \ref{fig:confusion_matrix}, for the best realization model over the 10 different splits. Although the model had a higher accuracy on predicting the four grouped stage (average score = 0.956) conditions compared to the 17 classes (average score = 0.925), the results were quite similar in terms of accuracy.
 
 \begin{figure*}[t!]
       \centering
       \includegraphics[width=0.9\textwidth]{confusion_matrix.png}
-      \caption{Neural network performance on predicting 4 groups (accuracy=0.971) or 17 classes (accuracy=0.953)}
+      \caption{Neural network performance on predicting 4 groups or 17 classes, with very similar results}
       \label{fig:confusion_matrix}
 \end{figure*}
 
@@ -351,7 +353,7 @@ The confusion matrices (normalized by the true label), for these two problems, i
 
 As the neural network trained in the previous section could work as a good predictor either for the 17 state conditions or the 4 grouped states, another objecitve of this study is to compare its performance with other known classifiers. The most popular algortihms in machine learning were included for that purpose.
 
-Since the neural network parameters (weights) learn through time with the backpropagation algorithm of trainning, we also provide a hyperparameter search for the soft classifiers, in order to tune them to get a more reliable comparison. A list of classifiers and the respecitve parameters used in hyperparameter search is found in table \ref*{tab:soft_parameters}.
+Since the neural network parameters (weights) learn through time with the backpropagation algorithm of trainning, we also provide a hyperparameter search for the soft classifiers, in order to tune them to get a more reliable comparison. A list of classifiers and the respecitve parameters used in hyperparameter search is found in table \ref{tab:soft_parameters}.
 
 \begin{table}[H]
       \centering
@@ -406,7 +408,7 @@ Since the neural network parameters (weights) learn through time with the backpr
       \label{tab:soft_parameters}
 \end{table}
 
-The model validation protocol, for the soft classifiers is described in figure \ref*{fig:soft_model_protocol}. Ten random splits are made in the dataset and for each of them, a model is selected over a 100 realization parameter search for each one of the classifiers using a 5-fold with five repetitions cross validation. In order to keep the comparison with the neural network as reliable as possible, the same random seeds were used in both cases.
+The model validation protocol, for the soft classifiers is described in figure \ref{fig:soft_model_protocol}. Ten random splits are made in the dataset and for each of them, a model is selected over a 100 realization parameter search for each one of the classifiers using a 5-fold with five repetitions cross validation. In order to keep the comparison with the neural network as reliable as possible, the same random seeds were used in both cases.
 
 \begin{figure}[H]
       \centering
@@ -432,7 +434,7 @@ A more complete reference on the soft classifiers algorithms tested in this work
 
 \subsection{Classifiers Results}
 
-After training the neural network and performing a hyperparameter search for the soft models, the results over the 10 randomly generated tran/test splits is shown in \ref*{fig:results}. The average score is represented by the black dot.
+After training the neural network and performing a hyperparameter search for the soft models, the results over the 10 randomly generated tran/test splits is shown in figure \ref{fig:results}. The average score is represented by the black dot.
 
 \begin{figure}[H]
       \centering
@@ -455,40 +457,70 @@ Decision Trees and the Ensemble methods showed a higher variance on their predic
 
 Kohonen or Self-Organizing Maps are a kind of neural network used to cluster the data into groups. Usually the neurons are organized in a 2-D so that the proximity in the input space is preserved in the 2D space after training. It's an unsupervised method that uses the technique of competitive learning and was proposed by \cite{kohonen}.
 
-The final step of this study is to apply a self organizing map to the input data. The self organizing map trained was a 12x15 neurons. The darker values in the map shown in figure \ref*{fig:som_unsup} show neurons quite distant from their neighbors, what is interpreted as a separation between clusters. The map pattern shows two well separated regions, what is confirmed when we plot the labeled data in a binary level (damged x undamaged - figure \ref*{fig:som2}). The map is quite accurate in separating these two classes and detecting the presence of two groups of similar characteristics.
+The final step of this study is to apply a self organizing map to the input data. Two self-organizing maps were trained: 12x15 and 25x25 neurons. The darker values in the maps shown in figures \ref{fig:som_unsup} and \ref{fig:som_unsup_2525} show neurons quite distant from their neighbors, what is interpreted as a separation between clusters.
 
-When we plot the labeled data with a more detail in classificatiom (4 groups or 17 state conditions), we see elements from the same class located in opposite positions in the map, what suggests that the map trained was not capable of separating groups in that level of detail (figures \ref*{fig:som4} and \ref*{fig:som17}).
+The 12x15 map pattern (figure \ref{fig:som_unsup}) shows two well separated regions, what is confirmed when we plot the labeled data in a binary level (damged x undamaged - figure \ref{fig:som2}). The map is quite accurate in separating these two classes and detecting the presence of two groups of similar characteristics. When we plot the labeled data with a more detail in classificatiom (4 groups or 17 state conditions), we see elements from the same class located in opposite positions in the map, what suggests that this map is not capable of separating groups in that level of detail (figures \ref{fig:som4} and \ref{fig:som17}). Although we can see some coherence in figures \ref{fig:som4} and \ref{fig:som17} for some classes, the average quality of the map is poor.
 
-Although we can see some coherence in figures \ref*{fig:som4} and \ref*{fig:som17} for some classes, the average quality of the map is poor.
+A higher dimension 25x25 map was trained in order to detect the presence of more groups. As we can see in figure \ref{fig:som_unsup_2525}, the map shows a higher number of clusters. This 25x25 map is more capable of separating groups 3 and 4 (figure \ref{fig:som4_2525}) better than the previous map (figure \ref{fig:som4}), where both classes were mixed. For the 17 State conditions, some classes are well separed according to the map, but in general we see still a poor performance in separating the 17 classes, what suggests that a higher order map should be trained for the purpose of identifying the state condisitons at this level of detail.
 
 \begin{figure*}
       \centering
-      \begin{subfigure}{0.45\textwidth}
+      \begin{subfigure}{0.245\textwidth}
             \includegraphics[width=\textwidth]{som_unsup.png}
             \caption{no label}
             \label{fig:som_unsup}
       \end{subfigure}
-      \begin{subfigure}{0.45\textwidth}
+      \begin{subfigure}{0.245\textwidth}
             \centering
             \includegraphics[width=\textwidth]{som_2.png}
-            \caption{Binary classification: damage x undamaged}
+            \caption{Binary classification}
             \label{fig:som2}
       \end{subfigure}
-      \begin{subfigure}{0.45\textwidth}
+      \begin{subfigure}{0.245\textwidth}
             \centering
             \includegraphics[width=\textwidth]{som_4.png}
             \caption{Grouped States}
             \label{fig:som4}
       \end{subfigure}
-      \begin{subfigure}{0.45\textwidth}
+      \begin{subfigure}{0.245\textwidth}
             \centering
             \includegraphics[width=\textwidth]{som_17.png}
             \caption{17 state conditions}
             \label{fig:som17}
       \end{subfigure}
 
-      \caption{Self organizing map on background (a) and target labels plotted (b,c,d)}
+      \caption{12x15 Self-Organizing Map on background (a) and target labels plotted (b,c,d)\newline}
       \label{fig:som}
+% \end{figure*}
+
+% \begin{figure*}
+%       \centering
+      \begin{subfigure}{0.245\textwidth}
+            \includegraphics[width=\textwidth]{som_unsup_2525.png}
+            \caption{no label}
+            \label{fig:som_unsup_2525}
+      \end{subfigure}
+      \begin{subfigure}{0.245\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{som_2_2525.png}
+            \caption{Binary classification}
+            \label{fig:som2_2525}
+      \end{subfigure}
+      \begin{subfigure}{0.245\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{som_4_2525.png}
+            \caption{Grouped States}
+            \label{fig:som4_2525}
+      \end{subfigure}
+      \begin{subfigure}{0.245\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{som_17_2525.png}
+            \caption{17 state conditions}
+            \label{fig:som17_2525}
+      \end{subfigure}
+
+      \caption{25x25 Self-Organizing Map on background (a) and target labels plotted (b,c,d)}
+      \label{fig:som_2525}
 \end{figure*}
 
 %
@@ -507,12 +539,20 @@ Although we can see some coherence in figures \ref*{fig:som4} and \ref*{fig:som1
 As the main conclusions of this study, we can mention:
 
 \begin{enumerate}
-      \item AR models, when using an appropriate order, are indeed useful as a feature extractor for the problem presented, and the coefficients of that model are themselves features in the reduced space.
-      \item For the proposed problem, the PCA techinque was responsible for achieving a high comression in the feature space dimension, transforming a 120 dimension input space into a 6-component with only a few loss of information.
-      \item The neural network model as well as the other classifiers (specially the linear models) performed well in detecting damage in the studied laboratory structure, considering the pre-processing procedures implemented (feature extraction and dimensionallity reduction).
-      \item It's reasonable to think that the same neural network or any of the soft classifiers, if applied directly to the initial feature space would lead to a poor performance as classifiers, due to the huge amount of fetures, what shows the importance of the preliminary steps in a data processing pipeline.
-      \item Self-Organizing Map trained in this study was capble of capturing the groups at a high level (binary classification: damaged vs undamaged), but showed a weak performance when getting in more detailed classification degrees.
+      \item AR models, when using an appropriate order, are indeed useful as feature extractors for the problem presented, and the coefficients of that model are themselves features in the reduced space.
+
+      \item PCA techinque was responsible for achieving a high compression in the feature space dimension, transforming a 120-dimension input space into a 6-component with only a few loss of information.
+
+      \item The neural network model as well as the other classifiers (specially the linear models and random forests) performed well in detecting damage in the studied laboratory structure, considering the pre-processing procedures implemented (feature extraction and dimensionallity reduction).
+
+      \item It's reasonable to think that the same neural network or any of the soft classifiers, if applied directly to the initial feature space would lead to a poor performance, due to the huge amount of fetures, what shows the importance of the preliminary steps in a data processing pipeline.
+
+      \item The 12x15 Self-Organizing Map was capable of capturing the groups at a high level (binary classification: damaged vs undamaged), but showed a weak performance when getting in more detailed classification degrees. The second map (25x25) captured successfully the feature space separation between the four groups and some of the 17 state conditions, but for this last level of detail, an even higher order map should be trained.
+
+      \item As a last remark, the very high score in predicting the state condutions confirm that the AR models are good features extractors with order=30 and could be also good feature extractors for a lower order (maybe p=15), what could be compensated by the capability of the algorithms in separating the classes.
 \end{enumerate}
+
+\pagebreak
 
 \bibliographystyle{apalike}
 \bibliography{export}
